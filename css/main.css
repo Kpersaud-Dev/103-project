@@ -100,23 +100,30 @@ textarea {
 /* Grid */
 
 body {
-  width: 1250px;
+  width: 100%;
 }
 
 .content-wrapper {
-  width: 960px;
-}
-
-aside {
-  width: 300px;
-}
-
-article {
-  width: 665px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 footer {
   width: 100%;
+}
+/***** General Styles *****/
+
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
 /***** Font Styles *****/
@@ -142,8 +149,19 @@ h4 {
   color: #45ac9d;
 }
 
+p {
+  line-height: 25px;
+}
 
 /***** Header *****/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border-bottom: 1px solid black;
+}
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -151,6 +169,89 @@ h1 {
   color: #45ac9d;
 }
 
+.header-text {
+  width: 56%;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  width: 50%;
+
+}
+
+header h2 {
+  width: 55%;
+  margin-top: 0;
+
+}
+
+nav {
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 22px;
+}
+
+/****** Main ******/
+
+.main-content {
+  width: 65%;
+  padding-left: 80px;
+  position: relative;
+  left: 50px;
+}
+
+article {
+  width: 60%;
+  border-bottom: 1px solid black;
+  padding: 15px;
+}
+
+article .post {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+
+aside {
+  width: 20%;
+  display: inline;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-self: flex-start;
+  border-left: 1px solid black;
+  padding-left: 50px;
+}
+
+aside ul li {
+  padding: 5px;
+  padding-left: 0;
+  position: relative;
+  right: 38px;
+}
+
+/***** Footer *****/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* ==========================================================================
    Helper classes
