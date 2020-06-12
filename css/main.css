@@ -112,7 +112,18 @@ body {
 }
 
 footer {
-  width: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 100px;
+  margin-top: 50px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+footer span {
+  font-weight: bold;
 }
 /***** General Styles *****/
 
@@ -160,7 +171,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  border-bottom: 1px solid black;
+
 }
 
 h1 {
@@ -213,20 +224,36 @@ nav ul li {
   width: 65%;
   padding-left: 80px;
   position: relative;
-  left: 50px;
+  left: 55px;
 }
 
 article {
   width: 60%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
   padding: 15px;
+  margin: 0;
 }
 
 article .post {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
 
+.article-footer span {
+  font-weight: bold;
+}
+
+.quote {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 1.125em;
+  word-spacing: 1.25em;
+  padding-left: 50px;
+}
+
+.quote-author {
+  padding-left: 50px;
 }
 
 aside {
@@ -235,8 +262,9 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
   align-self: flex-start;
-  border-left: 1px solid black;
+  border-left: 1px solid gray;
   padding-left: 50px;
+  margin: 0;
 }
 
 aside ul li {
@@ -244,6 +272,17 @@ aside ul li {
   padding-left: 0;
   position: relative;
   right: 38px;
+}
+
+.sidebar .search {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  padding: 20px 0;
+}
+
+.sidebar .about p span{
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /***** Footer *****/
